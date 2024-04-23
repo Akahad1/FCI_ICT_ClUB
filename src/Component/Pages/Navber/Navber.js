@@ -122,7 +122,7 @@ const Navber = () => {
     
     
   </div>
-  <div className="navbar-end ml-24 lg:ml-32 md:ml-64">
+  <div className="navbar-end ml-24 lg:ml-32 md:ml-64 lg:mr-8">
   <p><Link className='lg:text-xl md:text-xl text-white' to='/contact'>Contact Us</Link></p>
   </div>
 </div>
