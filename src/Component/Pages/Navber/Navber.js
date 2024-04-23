@@ -6,6 +6,8 @@ import { IoMailOpenOutline } from "react-icons/io5";
 import { FiPhoneCall } from "react-icons/fi";
 import { Link } from 'react-router-dom';
 import { RiArrowDropDownLine } from "react-icons/ri";
+import '../../../App.css'
+import './Navber.css'
 const Navber = () => {
     const [isHovered, setIsHovered] = useState(false);
     const [isHoveredCouress, setIsHoveredCouress] = useState(false);
@@ -44,7 +46,7 @@ const Navber = () => {
 
             {/* 2nd navber */}
 
-            <div>
+            <div >
                 <div className='lg:ml-10 ml-5 flex'>
                     <img alt=' logo' src={logo} className='lg:h-32 md:h-32 lg:w-32 md:w-32  h-24 w-24 rounded' ></img>
                     <p className='mt-5 md:mt-8 md:text-xl text-xl lg:text-3xl'>Feni Computer Institute <br/>ICT Club</p>
@@ -65,10 +67,10 @@ const Navber = () => {
 
             {/* 3nd navber */}
 
-            <div>
+            <div className=''>
 
-            <div className="navbar bg-black p-2">
-  <div className="s">
+            <div className="navbar bg-black p-2  sticky top-0">
+  <div className="">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
         <svg  xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -87,30 +89,30 @@ const Navber = () => {
     <p className='mr-20 text-xl text-white'><Link to='/'>Home</Link></p>
     <p onMouseEnter={handleMouseEnter} 
         onMouseLeave={handleMouseLeave}
-        style={{ cursor: 'pointer' }} className='mt-3 w-32 flex text-xl text-white'>About Us <RiArrowDropDownLine className='h-10 w-10 ' /></p>
+        style={{ cursor: 'pointer' }} className='mt-3 w-32 flex text-xl text-white'>About Us <RiArrowDropDownLine className='h-10 w-10  ' /></p>
         {isHovered && (
         <div 
-        className='lg:absolute border-gray-800 bg-black border-2 p-5 mt-32 ml-40'
+        className='absolute border-gray-800 bg-black border-2 p-5 mt-[-40px] ml-32'
         onMouseEnter={handleMouseEnter} 
         onMouseLeave={handleMouseLeave}
         >
           <Link to='/why'><p className='text-sky-600'>WHY US</p></Link>
          <Link to='/faculty'> <p className='text-sky-600 mt-5'>FACULTY</p></Link>
-         <Link to='/governing'> <p className='text-sky-600 mt-5'>Governing Body</p></Link>
+         <Link to='/governing'> <p className='text-sky-600 mt-5 mb-10'>Governing Body</p></Link>
         </div>
       )}
     <p onMouseEnter={handleMouseEnterCouress} 
         onMouseLeave={handleMouseLeaveCouress}
-        style={{ cursor: 'pointer' }} className='text-white mt-3 w-32 flex ml-20 text-xl'>Couress <RiArrowDropDownLine className='h-10 w-10 ' /></p>
+        style={{ cursor: 'pointer' }} className='text-white mt-3 w-32 flex ml-20 text-xl '>Couress <RiArrowDropDownLine className='h-10 w-10 ' /></p>
         {isHoveredCouress && (
         <div 
-        className='lg:absolute  border-gray-800 bg-black border-2 p-5 mt-32 ml-96'
+        className='absolute  border-gray-800 z-20 h-44 bg-black  border-2 p-5 mt-[-40px] ml-80'
         onMouseEnter={handleMouseEnterCouress} 
         onMouseLeave={handleMouseLeaveCouress}
         >
           <Link to='/web'><p className='text-sky-600'>Web Development</p></Link>
           <Link to='/progamming'><p className='text-sky-600 mt-5'>Programming </p></Link>
-          <Link to='/graphic'><p className='text-sky-600 mt-5'>Graphic Design</p></Link>
+          <Link to='/graphic'><p className='text-sky-600 mt-5 mb-10'>Graphic Design</p></Link>
         </div>
       )}
 
