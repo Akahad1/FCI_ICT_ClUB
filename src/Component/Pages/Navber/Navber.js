@@ -78,8 +78,23 @@ const Navber = () => {
       <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-black rounded-box w-80">
         <li><p className=' text-xl text-white'><Link to='/'>Home</Link></p></li>
         
-        
-
+        <details>
+          <summary className='text-white text-xl mt-3 mb-3'>About Us</summary>
+          <ul className="p-2">
+          <li><Link to='/why'><p className='text-sky-600'>WHY US</p></Link></li>
+         <li><Link to='/faculty'> <p className='text-sky-600 mt-5'>FACULTY</p></Link></li>
+        <li> <Link to='/governing'> <p className='text-sky-600 mt-5 '>Governing Body</p></Link></li>
+          </ul>
+        </details>
+        <details>
+          <summary className='text-white text-xl mt-3 mb-3'>Couress</summary>
+          <ul className="p-2">
+          <li><Link to='/web'><p className='text-sky-600'>Web Development</p></Link></li>
+         <li><Link to='/progamming'><p className='text-sky-600 mt-5'>Programming </p></Link></li>
+        <li>  <Link to='/graphic'><p className='text-sky-600 mt-5 '>Graphic Design</p></Link></li>
+          </ul>
+        </details>
+        <Link to='/notice'><p className='ml-4 mt-3 mb-3 text-xl text-white'>Notice</p></Link>
 
       </ul>
     </div>
@@ -117,7 +132,7 @@ const Navber = () => {
         </div>
       )}
 
-<p className='ml-20 text-xl text-white'><Link to='/notice'>Notice</Link></p>
+<Link to='/notice'><p className='ml-20 text-xl text-white'>Notice</p></Link>
     
     
     
