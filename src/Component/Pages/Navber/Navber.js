@@ -38,7 +38,7 @@ const Navber = () => {
                 <div className=' flex justify-center  lg:p-3 md:p-3 pb-3 lg:ml-auto md:mr-10 lg:mr-10 md:ml-auto'>
 
                 <FaFacebook  className='lg:text-3xl md:text-3xl text-2xl  text-white'/>
-                <button className='text-white lg:text-xl md:text-xl lg:ml-6 md:ml-8 ml-5'>Apply Now</button>
+                <Link to='/apply'><button className='text-white lg:text-xl md:text-xl lg:ml-6 md:ml-8 ml-5'>Apply Now</button></Link>
 
                 </div>
 
@@ -133,6 +133,7 @@ const Navber = () => {
       )}
 
 <Link to='/notice'><p className='ml-20 text-xl text-white'>Notice</p></Link>
+<Link to='/apply'><p className='ml-20 text-xl text-white'>Admissions</p></Link>
     
     
     

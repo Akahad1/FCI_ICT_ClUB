@@ -6,6 +6,7 @@ import OurFaculty from "../Pages/OurFaculty/OurFaculty";
 import Web from "../Pages/Web/Web";
 import Programming from "../Pages/Programming/Programming";
 import Graphic from "../Pages/Graphic/Graphic";
+import Apply from "../Pages/Apply/Apply";
 
 
 
@@ -18,6 +19,7 @@ const router =createBrowserRouter([
         {path:'/web',element:<Web></Web>},
         {path:'/progamming',element:<Programming></Programming>},
         {path:'/graphic',element:<Graphic></Graphic>},
+        {path:'/apply',element: <Apply></Apply>}
     ]}
 ])
 
